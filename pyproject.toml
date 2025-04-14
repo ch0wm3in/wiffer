@@ -1,13 +1,12 @@
 [project]
-name = "oidc-fun"
-version = "0.1.0"
-description = "Add your description here"
+name = "wiffer"
+version = "1.0.0"
+description = "Simple example OIDC WIF Workload Identity Federation"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "flask>=3.1.0",
     "jwcrypto>=1.5.6",
-    "requests>=2.32.3",
 ]
 
 [dependency-groups]
