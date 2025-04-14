@@ -1,0 +1,11 @@
+services:
+  app:
+    image: wiffer
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wiffer
+    ports:
+      - "80:5000"
+    env_file:
+      - .env

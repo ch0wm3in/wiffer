@@ -1,0 +1,81 @@
+default_language_version:
+  python: python3.13
+
+repos:
+  # Check for updates of pre-commit hooks
+-   repo: https://gitlab.com/vojko.pribudic.foss/pre-commit-update
+    rev: v0.6.1
+    hooks:
+    -   id: pre-commit-update
+
+  # General checks and trimmers
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: check-ast  # check if files parses as valid python
+    -   id: check-case-conflict  # check for files causing conflict in case-insensitive filesystems
+    -   id: check-executables-have-shebangs  # check non-binary executables have a shebang
+    -   id: check-merge-conflict  # check for files with merge-conflict-stings
+    -   id: debug-statements  # check for debugger imports etc.
+    -   id: detect-private-key  # detects the presence of private keys
+    -   id: trailing-whitespace  # trims trailing whitespace
+    -   id: name-tests-test
+        args: ["--pytest-test-first"]
+    -   id: mixed-line-ending  # Check and fix mixed line ending (only LF for compatibility)
+        args: ["--fix=lf"]
+    -   id: check-yaml  # check yaml files for parseable syntax
+    -   id: check-toml  # check toml files for parseable syntax
+    -   id: check-json  # check json files for parseable syntax
+
+  # Enforce that noqa flake annotations always occur with specific codes
+-   repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0  # Use the ref you want to point at
+    hooks:
+    -   id: python-check-blanket-noqa
+
+  # Enforce that nosec bandit annotations always occur with specific codes
+-   repo: local
+    hooks:
+    -   id: python-check-blanket-nosec
+        name: check blanket nosec
+        description: 'Enforce that `nosec` annotations always occur with specific
+          codes. Sample annotations: `# nosec: B401`, `# nosec: B401,B203`'
+        entry: '(?i)# nosec(?!: )'
+        language: pygrep
+        types: [python]
+
+  # Remove unused imports
+-   repo: https://github.com/hadialqattan/pycln
+    rev: v2.5.0 # Possible releases: https://github.com/hadialqattan/pycln/releases
+    hooks:
+    -   id: pycln
+        args: ["-a"]
+
+  # Bandit - Security linter
+-   repo: https://github.com/pycqa/bandit
+    rev: 1.8.3
+    hooks:
+    -   id: bandit
+        args: ["-x", "tests"]
+        #B113 requests without timeout
+        #args: ['-iii', '-ll']  # Only report issues with high confidence and medium+ severity
+
+  # isort - Auto sorting of imports for consistency
+-   repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+    -   id: isort
+        args: ["--profile", "black"]
+
+  # Black - Python Code Formatter
+-   repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+    -   id: black
+        args: ["--line-length", "138"]
+
+  # flake8 - style guide enforcement
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.2.0
+    hooks:
+    -   id: flake8
