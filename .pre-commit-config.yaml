@@ -19,6 +19,7 @@ repos:
     -   id: debug-statements  # check for debugger imports etc.
     -   id: detect-private-key  # detects the presence of private keys
     -   id: trailing-whitespace  # trims trailing whitespace
+        args: ["--markdown-linebreak-ext=md"]
     -   id: name-tests-test
         args: ["--pytest-test-first"]
     -   id: mixed-line-ending  # Check and fix mixed line ending (only LF for compatibility)
