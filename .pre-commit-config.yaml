@@ -4,7 +4,7 @@ default_language_version:
 repos:
   # Check for updates of pre-commit hooks
 -   repo: https://gitlab.com/vojko.pribudic.foss/pre-commit-update
-    rev: v0.7.0
+    rev: v0.8.0
     hooks:
     -   id: pre-commit-update
 
@@ -54,7 +54,7 @@ repos:
 
   # Bandit - Security linter
 -   repo: https://github.com/pycqa/bandit
-    rev: 1.8.3
+    rev: 1.8.5
     hooks:
     -   id: bandit
         args: ["-x", "tests"]
@@ -77,6 +77,6 @@ repos:
 
   # flake8 - style guide enforcement
 -   repo: https://github.com/pycqa/flake8
-    rev: 7.2.0
+    rev: 7.3.0
     hooks:
     -   id: flake8
