@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 
 [[package]]
@@ -312,7 +312,7 @@ wheels = [
 
 [[package]]
 name = "pre-commit-update"
-version = "0.6.1"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -321,9 +321,9 @@ dependencies = [
     { name = "ruamel-yaml" },
     { name = "tomli" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c4/fb/1fcd12cb2fab917181c18427c6d6562e5425213bda697523fa615891f6fe/pre_commit_update-0.6.1.tar.gz", hash = "sha256:dfd1b11c6ae3ad743aba38d95b783d3048b282014cce30906ed64c043600c0de", size = 19293, upload-time = "2024-12-19T15:15:04.847Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/4b/499c0925c9a477fd154aa486cbb72567bb11657e826b835d6667e93ef892/pre_commit_update-0.8.0.tar.gz", hash = "sha256:d1d9785d24d93056ceb9173d3278cf73a05de19e0a604f48aaa012b566679725", size = 20488, upload-time = "2025-06-30T08:27:49.306Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/81/714e43e2c622c061569305e73edfea6e557a98af1293e135e46aa5d40b3d/pre_commit_update-0.6.1-py3-none-any.whl", hash = "sha256:db00891b3384776daaaa5721fd54a448ded19daf87635a3c77b7508eaf7d1634", size = 23357, upload-time = "2024-12-19T15:15:02.22Z" },
+    { url = "https://files.pythonhosted.org/packages/d6/a4/f002e27559d8dc6722ea744b1ef28577437087fcf8ca5126a8dc43787b35/pre_commit_update-0.8.0-py3-none-any.whl", hash = "sha256:bd43a9bb7b5fff432b1634d357d0228bc1067a19e09666f104db43b24e26238a", size = 19209, upload-time = "2025-06-30T08:27:47.762Z" },
 ]
 
 [[package]]
