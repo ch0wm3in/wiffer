@@ -312,7 +312,7 @@ wheels = [
 
 [[package]]
 name = "pre-commit-update"
-version = "0.8.0"
+version = "0.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -321,9 +321,9 @@ dependencies = [
     { name = "ruamel-yaml" },
     { name = "tomli" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2f/4b/499c0925c9a477fd154aa486cbb72567bb11657e826b835d6667e93ef892/pre_commit_update-0.8.0.tar.gz", hash = "sha256:d1d9785d24d93056ceb9173d3278cf73a05de19e0a604f48aaa012b566679725", size = 20488, upload-time = "2025-06-30T08:27:49.306Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ee/38/c9739e518f48f660f13e534a8ef8712045f15ad39a0c63413891a126891d/pre_commit_update-0.9.0.tar.gz", hash = "sha256:404dba7b176a042e2b4858b752c4e920595a7bc6935e4f594d7554083bd5c4d9", size = 20486, upload-time = "2025-11-04T13:45:20.637Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d6/a4/f002e27559d8dc6722ea744b1ef28577437087fcf8ca5126a8dc43787b35/pre_commit_update-0.8.0-py3-none-any.whl", hash = "sha256:bd43a9bb7b5fff432b1634d357d0228bc1067a19e09666f104db43b24e26238a", size = 19209, upload-time = "2025-06-30T08:27:47.762Z" },
+    { url = "https://files.pythonhosted.org/packages/52/c9/bdf631d60caa1cadf16978922b733bec7d831dc77220a8966c08deb87038/pre_commit_update-0.9.0-py3-none-any.whl", hash = "sha256:0264337064c362515405a2861431e1518f3a711c50e5dce5a7b484f2eb33f1af", size = 19223, upload-time = "2025-11-04T13:45:19.102Z" },
 ]
 
 [[package]]
