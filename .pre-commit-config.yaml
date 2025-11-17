@@ -4,7 +4,7 @@ default_language_version:
 repos:
   # Check for updates of pre-commit hooks
 -   repo: https://gitlab.com/vojko.pribudic.foss/pre-commit-update
-    rev: v0.8.0
+    rev: v0.9.0
     hooks:
     -   id: pre-commit-update
 
@@ -54,7 +54,7 @@ repos:
 
   # Bandit - Security linter
 -   repo: https://github.com/pycqa/bandit
-    rev: 1.8.6
+    rev: 1.9.0
     hooks:
     -   id: bandit
         args: ["-x", "tests"]
@@ -70,7 +70,7 @@ repos:
 
   # Black - Python Code Formatter
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.9.0
+    rev: 25.11.0
     hooks:
     -   id: black
         args: ["--line-length", "138"]
