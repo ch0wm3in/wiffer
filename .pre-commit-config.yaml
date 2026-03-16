@@ -54,7 +54,7 @@ repos:
 
   # Bandit - Security linter
 -   repo: https://github.com/pycqa/bandit
-    rev: 1.9.2
+    rev: 1.9.4
     hooks:
     -   id: bandit
         args: ["-x", "tests"]
@@ -63,14 +63,14 @@ repos:
 
   # isort - Auto sorting of imports for consistency
 -   repo: https://github.com/pycqa/isort
-    rev: 7.0.0
+    rev: 8.0.1
     hooks:
     -   id: isort
         args: ["--profile", "black"]
 
   # Black - Python Code Formatter
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.12.0
+    rev: 26.3.1
     hooks:
     -   id: black
         args: ["--line-length", "138"]
