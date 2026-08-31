@@ -63,14 +63,14 @@ repos:
 
   # isort - Auto sorting of imports for consistency
 -   repo: https://github.com/pycqa/isort
-    rev: 8.0.1
+    rev: 9.0.1
     hooks:
     -   id: isort
         args: ["--profile", "black"]
 
   # Black - Python Code Formatter
 -   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 26.3.1
+    rev: 26.5.1
     hooks:
     -   id: black
         args: ["--line-length", "138"]
